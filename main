@@ -1,0 +1,88 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProAutoGlass</title>
+    <style>
+        /* Основные стили */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+        /* Верхний баннер */
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            flex-grow: 1;
+            animation: slideIn 1.5s ease-out;
+        }
+        /* Анимация */
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Навигация */
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .nav a:hover {
+            color: #ccc;
+        }
+        /* Контент */
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .service-title {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Верхний баннер -->
+    <div class="header">
+        <div class="logo">ProAutoGlass</div>
+        <div class="nav">
+            <a href="tel:+79990000000">Записаться: +7 (999) 000-00-00</a>
+            <a href="#services">Услуги</a>
+            <a href="#portfolio">Наши работы</a>
+        </div>
+    </div>
+
+    <!-- Основной контент -->
+    <div class="content">
+        <h2 class="service-title">Добро пожаловать в ProAutoGlass</h2>
+        <p>Мы предлагаем профессиональную замену и ремонт автостекол.</p>
+    </div>
+
+</body>
+</html>
